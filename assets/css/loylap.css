@@ -1,0 +1,195 @@
+@font-face {
+  font-family: 'hk-nova';
+  src: url('./../../public/fonts/Standard/HKNova-Regular.woff2');
+}
+
+.loylap-circle {
+  display: block;
+  content: '';
+  border-radius: 50%;
+  background-color: greenyellow;
+  /*https://is1-ssl.mzstatic.com/image/thumb/Purple124/v4/0d/45/01/0d4501c2-0072-3668-b537-0e02810914db/source/512x512bb.jpg*/
+  background-image: url('../images/loylap_icon.png');
+  background-position: center;
+  background-size: 75px 75px;
+  width: 4em;
+  height: 4em;
+  z-index: 1;
+  position: fixed;
+  bottom: 65px;
+  right: 65px;
+  z-index: 99999;
+
+  border: 1px solid rgb(155, 155, 155);
+}
+
+.loylap-circle:hover {
+  transition: all 0.3s;
+  transform: scale(1.2);
+  border: 1px solid red;
+}
+
+.loylap_giftcards {
+  position: fixed;
+  bottom: 115px;
+  right: 115px;
+  width: 550px;
+  overflow-y: scroll;
+  border-radius: 2px;
+  background-color: rgb(233, 233, 233);
+  padding: 5px;
+
+  /* FONT */
+  font: sans-serif;
+  line-height: 1;
+  color: black;
+
+  display: none;
+  z-index: 99998;
+}
+
+.loylap-box {
+  color: #000;
+  background-color: rgba(214, 214, 214, 0.863);
+
+  width: 15em;
+  height: 5em;
+
+  padding: 0.4em;
+
+  font-size: 12pt;
+
+  position: fixed;
+  bottom: 13%;
+  right: 1%;
+}
+
+.loylap-box > div {
+  background-color: #ff0000;
+  font-size: 16pt;
+  width: 0.5em;
+  height: 0.5em;
+  position: absolute;
+  bottom: 3.2em;
+  left: 0.1em;
+}
+
+.loylap-box > div::after {
+  content: 'X';
+  color: #fff;
+  font-size: 9pt;
+  align-content: center;
+  z-index: 4;
+  position: relative;
+  bottom: 1.3em;
+  left: 0.15em;
+}
+
+.loylap_balance_check {
+  font-family: 'hk-nova', sans-serif;
+  width: 550px;
+  border: 1px solid rgb(158, 157, 157);
+  border-radius: 9px;
+  padding: 1em 2em;
+}
+
+.loylap_balance_check #balanceCheckForm {
+  margin: 0 auto;
+}
+.loylap_balance_check h3 {
+  font-weight: bold;
+}
+
+.loylap_balance_check > form input::placeholder {
+  color: #dadada;
+}
+
+.loylap_balance_check > form input {
+  display: inline;
+  border-radius: 100px;
+  margin-right: 2em;
+  margin-top: 1.5em;
+  background: inherit;
+}
+
+.loylap_balance_check > form input:hover {
+  transition: 0.4s border;
+  border: 1px solid rgb(58, 58, 58);
+}
+.loylap_balance_check > form input:hover::placeholder {
+  color: #585858;
+}
+
+.loylap_balance_check > form input:focus {
+  transition: 0.3s border-color;
+  border-color: #4f0780;
+  caret-color: #30cf89;
+  outline: none;
+}
+
+.loylap_balance_check > form input[type='submit'] {
+  background-color: #30cf89;
+  color: #fff;
+
+  display: block;
+
+  padding: 0.4em 3.5em;
+
+  margin: 0 auto;
+  margin-top: 2em;
+
+  border: none;
+  border-radius: 100px;
+
+  box-shadow: rgb(214, 214, 214) 1px 2px 4px;
+}
+
+.loylap_balance_check > form input[type='submit']:disabled {
+  background-color: #585858;
+}
+
+.loylap_balance {
+  text-align: center;
+
+  font: sans-serif;
+  font-size: 18pt;
+
+  margin: 1em 0px;
+}
+.loylap_balance p {
+  margin: 0;
+}
+
+.loylap_balance .smallText {
+  font-size: 11pt;
+  color: #858585;
+}
+
+.loylap_balance .value {
+  font-size: 18pt;
+  font-weight: bold;
+  color: #4f0780;
+}
+
+#inline_loylap_giftcards {
+  margin-top: 2em;
+}
+
+#loylap-mark {
+  position: relative;
+  width: 120px;
+  left: 99%;
+  bottom: 1em;
+  font-size: 4pt;
+}
+
+#loylap-mark #loylap-logo {
+  display: block;
+  width: 30px;
+  height: 15px;
+
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('../images/loylapFulltext_green.png');
+}

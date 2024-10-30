@@ -1,0 +1,425 @@
+/**
+Name: Loylap giftcard styling
+Author: Loylap
+
+    Index: 
+    0. Fonts
+    1. General
+    2. Buttons
+    3. Details dropdown
+    4. Header
+    5. toasts
+    6. Previews
+    7. General input
+    8. Image
+    9. Table
+
+**/
+
+/**
+    0. Fonts
+**/
+
+@font-face {
+  font-family: 'hk-nova';
+  src: url('./../../fonts/HKNova-Regular.woff2');
+}
+
+.text-red {
+  color: #fa3e3e !important;
+}
+
+/**
+    1. Geneneral 
+**/
+
+.loylap_options * {
+  font-family: 'hk-nova', sans-serif;
+}
+
+.loylap-logo {
+  display: inline-block;
+  width: 112.5px;
+  position: relative;
+}
+
+.loy_business_details > .dropdown {
+  margin-left: 70%;
+}
+
+.loy_preview,
+.edit {
+  display: inline-block;
+  width: 20em;
+}
+
+.edit * {
+  position: relative;
+  top: 35px;
+}
+
+.loy_preview {
+  align-content: center;
+  justify-content: center;
+  float: left;
+}
+
+.loy_preview > img {
+  margin-top: 2em;
+  margin-left: 4.5em;
+}
+
+.loy_edit {
+  float: right;
+  margin-right: 15em;
+  margin-top: 2.5em;
+}
+
+.light-text {
+  font-weight: normal;
+  color: #adadad;
+}
+
+.dark-text {
+  color: #131313 !important;
+}
+/**
+    2. Buttons 
+**/
+
+.loylap-button-text {
+  background-color: rgba(0, 0, 0, 0);
+  color: #dadada;
+  border: none;
+  border-radius: 5px;
+  box-shadow: none;
+  outline: none;
+  padding: 0.4em;
+}
+
+.loylap-button-text:hover {
+  cursor: pointer;
+}
+
+.logout-button {
+  width: 1.3em;
+  height: 1.3em;
+
+  margin-left: 1.5em;
+
+  background-image: url('./../../images/001-exit.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  bottom: 0.5em;
+}
+
+.logout-button > input:hover {
+  cursor: pointer;
+}
+
+.logout-button > input {
+  opacity: 0;
+  width: 1.9em;
+  position: relative;
+  right: 0.7em;
+  bottom: 0.8em;
+}
+
+.logout-button::after {
+  filter: brightness(50%) saturate(40%);
+}
+
+.loylap-button-outline {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-color: #30cf89 !important;
+  border-width: 6px;
+  border-radius: 9px !important;
+  padding: 0.7em;
+  box-shadow: 0 1px 0 #8d8d8d !important;
+  color: #30cf89 !important;
+  text-decoration: none;
+  text-shadow: none !important;
+}
+.loylap-button {
+  background-color: #30cf89 !important;
+  border-color: #30cf89 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 1px 0 #8d8d8d !important;
+  color: #fff !important;
+  text-decoration: none;
+  text-shadow: none !important;
+  height: 3em !important;
+  width: 9em !important;
+  padding: 0.3em !important;
+}
+
+.btn-right {
+  position: relative;
+  left: 80%;
+}
+
+.btn-loylap {
+  box-shadow: none;
+  border: none;
+  border-radius: 0.2em;
+  padding: 0.4em 3.5em;
+  background-color: #30cf89;
+  color: #fff;
+}
+
+.btn-loylap:hover {
+  cursor: pointer;
+}
+
+/**
+    3. details dropdown
+**/
+
+.dropdown {
+  display: inline-block;
+  width: 175px;
+  height: 2.5em;
+
+  color: rgb(165, 165, 165);
+  position: relative;
+}
+
+.dropdown:hover {
+  cursor: default;
+}
+
+.dropdown img.brand-logo {
+  width: 2.5em;
+  height: 2.5em;
+
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px -4px rgb(104, 104, 104);
+
+  position: relative;
+  bottom: 2px;
+}
+
+.dropdown-toggle {
+  display: inline;
+  text-align: center;
+
+  padding: 0.5em;
+  position: relative;
+  bottom: 1.2em;
+}
+
+.arrow {
+  width: 1em;
+  margin-left: 0.4em;
+  position: relative;
+  top: 0.3em;
+}
+
+.dropdown-content {
+  display: none;
+  box-shadow: 5px 5px 8px rgb(165, 165, 165);
+  width: 16em;
+  position: absolute;
+  top: 3em;
+  padding: 0.4em;
+  background-color: #fdfdfd;
+  z-index: 5;
+}
+
+.dropdown-item {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #adadad;
+  height: 0.9em;
+}
+.dropdown-item b {
+  margin-right: 0.3em;
+}
+
+/**
+    4. Header
+**/
+
+.loy_business_details input:not([type='submit']) {
+  background-color: #0000;
+  border: none;
+  border-bottom: 1px solid white;
+  box-shadow: none;
+}
+
+.loy_business_details input:not([type='submit']):active {
+  outline: none;
+}
+
+.loy_business_details input:not([type='submit']):focus {
+  transition: 0.3s border-bottom-color;
+  border-bottom-color: rgb(11, 150, 34);
+}
+
+.loy_business_details h3 {
+  color: #d8d8d8;
+}
+
+.loy_business_details {
+  margin: 0px 0px 5em -20px;
+  padding: 2em;
+  padding-right: 0;
+  padding-left: 20px;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  box-shadow: 0px 13px 13px -8px #8d8d8d;
+  color: #d8d8d8;
+}
+
+.loy_business_details h2 {
+  color: white;
+}
+.loy_business_details .details {
+  display: inline-block;
+  width: 10em;
+}
+
+.logout-form {
+  display: inline-block;
+  position: relative;
+}
+
+/**
+    5. toasts 
+**/
+
+.loylap-warning {
+  background-color: rgb(203, 244, 252);
+  color: rgb(78, 78, 78);
+  padding: 0.3em;
+  border: 2px solid rgb(147, 221, 236);
+  font-weight: bold;
+  font-size: 9pt;
+  width: 40em;
+  margin: 0.4em 0;
+}
+
+.loylap-warning > h4 {
+  margin-top: 0.3em;
+  font-size: 11pt;
+}
+
+.loylap-apikey {
+  display: block;
+  color: #000;
+  background-color: rgb(248, 246, 104);
+  text-align: center;
+  line-height: 1em;
+  width: 26em;
+  height: 1em;
+  padding: 1em;
+}
+
+.loylap-fail {
+  background-color: rgb(252, 203, 203);
+  color: rgb(78, 78, 78);
+  padding: 0.1em;
+  border: 2px solid rgb(236, 153, 147);
+  font-weight: bold;
+  font-size: 9pt;
+
+  width: 40em;
+  margin: 0.4em 0;
+}
+
+.loylap-fail > h4 {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  font-size: 11pt;
+}
+
+/**
+    6.  Previews 
+**/
+
+.loy_preview {
+  display: block;
+
+  background-position: center;
+  background-size: contain;
+  border-radius: 9px;
+  width: 17em;
+  height: 8em;
+}
+
+.loy_preview_circle {
+  display: block;
+  width: 4em;
+  height: 4em;
+  margin-bottom: 1em;
+  border-radius: 50%;
+}
+
+/**
+    7. General input 
+**/
+.loylap-select {
+  border-color: #c4c4c4;
+  border-radius: 7px;
+  margin-bottom: 6em;
+}
+
+.loylap-select:hover {
+  cursor: pointer;
+}
+
+.loyalp-form label {
+  color: #242424;
+}
+
+.loylap-form > input:not([type='submit']) {
+  display: block;
+  margin-bottom: 1.2em;
+  width: 15em;
+}
+
+.loylap-form > input::placeholder {
+  color: rgb(219, 218, 218);
+}
+
+/**
+    8. Image 
+**/
+.loy_fit {
+  background-size: cover;
+}
+
+.loy_fill {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.loy_stretch {
+  background-size: inherit;
+  background-position: center;
+}
+
+/*
+    9. Table
+*/
+
+.loylap-table {
+  width: 90%;
+}
+
+.loylap-table tr {
+  max-height: 14vh;
+  border-bottom: solid #c4c4c4 1px;
+}
+
+.loylap-table tr th {
+  width: 40%;
+}
+
+.loylap-table tr td {
+  width: 30%;
+}

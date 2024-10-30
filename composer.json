@@ -1,0 +1,13 @@
+{
+  "name": "dev/loylap",
+  "authors": [
+    {
+      "name": "LoyLap",
+      "email": "support@loylap.com"
+    }
+  ],
+  "require": {
+    "sentry/sentry": "^1.0",
+    "ocramius/proxy-manager": "^1.0.2"
+  }
+}
